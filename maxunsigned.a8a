@@ -5,7 +5,7 @@
 inizio:
 	LD	A
 	CMP B
-	JLS caso2
+	JLU caso2
 	LD A
 	JMP	store
 caso2:
