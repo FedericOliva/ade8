@@ -1,0 +1,14 @@
+	JMP		inizio
+	A:		0ffh		;numero da controllare
+	B:		0
+	C:		1
+inizio:
+	LD		A
+	CMP		B
+	JLS		positivo
+	JMP		fine
+positivo:
+	LD		C
+	ST		B
+fine:
+	JMP 	fine
