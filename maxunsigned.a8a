@@ -1,7 +1,7 @@
 	JMP	inizio
-	A:	05h	;primo numero
+	A:	05h		;primo numero
 	B:	0F7h	;secondo numero
-	C:	00h	;risultato
+	C:	00h		;risultato
 inizio:
 	LD	A
 	CMP B
