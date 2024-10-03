@@ -4,7 +4,7 @@ B:		0
 C:		1
 inizio:	
 		LD		A
-		ADDv	C
+		ADD		C
 		AND		C
 		ST		B
 fine:
