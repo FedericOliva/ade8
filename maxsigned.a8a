@@ -3,17 +3,17 @@
 	B:	0F7h	;secondo numero
 	C:	00h		;risultato
 inizio:
-	LD	A
-	CMP B
-	JLS caso2
-	LD A
-	JMP	store
+	LD		A
+	CMP		B
+	JLS		caso2
+	LD		A
+	JMP		store
 caso2:
-	LD B
+	LD		B
 store:
-	ST C
+	ST		C
 fine:
-	JMP fine
+	JMP		fine
 	
 
 	

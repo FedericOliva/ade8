@@ -1,0 +1,13 @@
+	JMP		inizio
+	A:		6		
+	B:		9
+	C:		0
+inizio:
+	LD 		A
+	ST		C
+	LD		B
+	ST		A
+	LD		C
+	ST		B
+fine:
+	JMP 	fine
