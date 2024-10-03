@@ -1,0 +1,19 @@
+	JMP	inizio
+	A:	5	;primo numero
+	B:	9	;secondo numero
+	C:	0	;risultato
+inizio:
+	LD	A
+	CMP B
+	JLS caso2
+	LD A
+	JMP	store
+caso2:
+	LD B
+store:
+	ST C
+fine:
+	JMP fine
+	
+
+	
