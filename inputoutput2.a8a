@@ -1,0 +1,4 @@
+inizio:
+    LD      0D2h
+    ST      0D0h
+    JMP     inizio
