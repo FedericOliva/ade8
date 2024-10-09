@@ -1,0 +1,7 @@
+    JMP     inizio
+    var:    0Ah
+inizio:
+    LD      var
+    ST      0D0h
+fine:
+    JMP     fine
