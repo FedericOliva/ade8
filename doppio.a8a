@@ -1,0 +1,16 @@
+    JMP     inizio
+    A:      0ffh
+    C:      0h
+    D:      0h
+inizio:
+    LD      A
+    ADD     A
+    ST      C
+    LD      A
+    CMP     C
+    JLU     no
+    LDv     1
+    ST      D
+no:
+fine:
+    JMP     fine
