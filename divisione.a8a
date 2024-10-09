@@ -1,0 +1,21 @@
+    JMP     inizio
+    A:      0Ch
+    B:      03h
+    Q:      0h
+    R:      0h
+inizio:
+ciclo:
+    LD      A
+    CMP     B
+    JLU     fineciclo
+    SUB     B
+    ST      A
+    LD      Q
+    ADDv    01h
+    ST      Q
+    JMP     ciclo
+fineciclo:
+    LD      A
+    ST      R
+fine:
+    JMP     fine
