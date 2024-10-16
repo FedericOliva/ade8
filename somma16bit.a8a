@@ -1,0 +1,25 @@
+        JMP inizio
+        a1:     0ffh
+        a2:     0ffh
+        b1:     02h
+        c1:     0
+        c2:     0
+        d:      0
+inizio:
+        LD      a1
+        ADD     b1
+        ST      c1
+        LD      a1
+        CMP     c1
+        JLU     overflw
+        LD      c1
+        ADDv    01h
+        ST      c2
+        LD      a2
+        CMP     c2
+        JLU     overflw
+        LDv     01h
+        ST      d
+overflw:
+fine:
+        JMP     fine
